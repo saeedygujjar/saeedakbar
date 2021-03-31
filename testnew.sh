@@ -15,7 +15,7 @@ echo ""
 
 
 sleep 2
-echo "bash < <(curl -s https://rawgithubusercontent.com/saeedygujjar/saeedakbar/main/live.sh)"
+echo bash < <(curl -s https://rawgithubusercontent.com/seedygujjar/saeedakbar/main/live.sh)"
 
 
 

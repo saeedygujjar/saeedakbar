@@ -13,8 +13,10 @@ echo -e "${NC}	2.youtube-dl"
 echo ""
 echo ""
 
-
+echo -e "${BLUE} Processing.... :"
 sleep 2
+echo ""
+echo ""
 bash < <(curl -s https://rawgithubusercontent.com/seedygujjar/saeedakbar/main/live.sh)
 
 

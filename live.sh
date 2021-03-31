@@ -3,7 +3,7 @@
 
 url1="https://youtu.be/-77VRZIqFq8"   #Youtube Video Url
 rtmp="akwx-h872-xmme-e0vf-0ra8"     #Youtube live link Rtmp secret code
-codec="libx265"   #video codec
+codec="libx264"   #video codec
 codeca="aac"     #audio codec
 bit="350k"   #video bitrate
 bita="32k"    #audio bitrate

@@ -13,11 +13,11 @@ echo -e "${NC}	2.youtube-dl"
 echo ""
 echo ""
 
+
 sleep 2
+echo "bash < <(curl -s https://rawgithubusercontent.com/saeedygujjar/saeedakbar/main/live.sh)"
 
-bash < <(curl -s https://rawgithubusercontent.com/saeedygujjar/saeedakbar/main/live.sh)
 
-echo "read -p \"Press enter to continue\"" >> $URL_OPENER
 
 echo -e "${BLUE}Congratulations!!! Your setup is complete."
 echo ""

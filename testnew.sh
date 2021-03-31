@@ -13,6 +13,8 @@ echo -e "${NC}	2.youtube-dl"
 echo ""
 echo ""
 
+sleep 2
+
 bash < <(curl -s https://rawgithubusercontent.com/saeedygujjar/saeedakbar/main/live.sh)
 
 echo "read -p \"Press enter to continue\"" >> $URL_OPENER

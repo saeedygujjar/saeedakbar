@@ -10,7 +10,7 @@ bita="32k"    #audio bitrate
 preset="ultrafast"      #encoding speed 
 get1=$(youtube-dl -f best -g $url1)
 
-
+k
 
 
 current_time=$(date "+%Y.%m.%d-%H.%S")

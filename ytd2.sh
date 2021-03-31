@@ -54,7 +54,7 @@ ffmpeg \
 
 y
 
-mkdir 
+
 
 echo ""
 

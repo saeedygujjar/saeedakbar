@@ -10,9 +10,9 @@ sleep 1
 echo -e "${BLUE}Requirements :"
 echo -e "${NC}	1.Ffmpeg."
 echo -e "${NC}	2.youtube-dl"
-person = input('Enter your name: ')
 
-print('Hello', person)
+
+
 echo ""
 
 echo -e "${BLUE} Processing.... :"
@@ -20,6 +20,7 @@ sleep 2
 echo ""
 echo ""
 bash < <(curl -s https://rawgithubusercontent.com/seedygujjar/saeedakbar/main/live.sh)
+y
 
 
 

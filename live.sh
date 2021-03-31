@@ -22,7 +22,7 @@ ffmpeg \
      -i $get1 \
          -c:v $codec -b:v $bit -preset $preset  \
          -c:a $codeca -b:a $bita -ar 44100  \
-    -f flv "rtmp://a.rtmp.youtube.com/live2/$rtmp"
+    -f flv "/storage/emulated/0/$current_time.mp4"
     
 
 

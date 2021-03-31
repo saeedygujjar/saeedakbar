@@ -10,7 +10,9 @@ sleep 1
 echo -e "${BLUE}Requirements :"
 echo -e "${NC}	1.Ffmpeg."
 echo -e "${NC}	2.youtube-dl"
-echo ""
+person = input('Enter your name: ')
+
+print('Hello', person)
 echo ""
 
 echo -e "${BLUE} Processing.... :"

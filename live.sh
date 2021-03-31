@@ -1,11 +1,11 @@
 
 #! /bin/bash
 
-url1="https://youtu.be/mE5J3sdgvOo"   #Youtube Video Url
+url1="https://youtu.be/-77VRZIqFq8"   #Youtube Video Url
 rtmp="akwx-h872-xmme-e0vf-0ra8"     #Youtube live link Rtmp secret code
-codec="libx264"   #video codec
+codec="libx265"   #video codec
 codeca="aac"     #audio codec
-bit="450k"   #video bitrate
+bit="350k"   #video bitrate
 bita="32k"    #audio bitrate
 preset="ultrafast"      #encoding speed 
 get1=$(youtube-dl -f best -g $url1)

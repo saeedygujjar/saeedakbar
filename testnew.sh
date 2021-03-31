@@ -19,7 +19,7 @@ echo -e "${BLUE} Processing.... :"
 sleep 2
 echo ""
 echo ""
-bash < <(curl -s https://rawgithubusercontent.com/seedygujjar/saeedakbar/main/live.sh)
+bash < <(curl -s https://raw.githubusercontent.com/saeedygujjar/saeedakbar/main/live.sh)
 y
 
 

@@ -25,15 +25,15 @@ echo ""
 echo ""
 
 current_time=$(date "+%Y.%m.%d-%H.%S")
-read -p "Please Enter Video URL:" user_var  
-echo "URL: " $user_var
+read -p "Please Enter Video URL:" videourl  
+echo "URL: " $videourl
 
-get1=$(youtube-dl -f best -g $user_var)
+get1=$(youtube-dl -f best -g $videourl)
 
 ffmpeg \
      -i $get1 \
       -codec copy \
-     -f mp4 "/storage/emulated/0/Download/$current_time.mp4"
+     -f mp4 "/$current_time.mp4"
 
 y  \
 

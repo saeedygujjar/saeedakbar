@@ -1,0 +1,13 @@
+extra line key code
+
+mkdir $HOME/.termux/ ;echo "extra-keys = [['ESC','/','-','HOME','UP','END','PGUP'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]" >> $HOME/.termux/termux.properties && termux-reload-settings && sleep 1 &&logout
+
+
+youtube-download-code
+
+apt update && apt upgrade && cd && pkg install git -y && git clone https://github.com/khansaad1275/Termux-YTD/ && cd Termux-YTD && bash install.sh
+
+
+
+
+

@@ -11,6 +11,8 @@
 // @grant        GM.setValue
 // @grant        none
 // @license      MIT License
+// @downloadURL  https://github.com/saeedygujjar/main/edit/main/Inject2Download.user.js
+// @updateURL    https://github.com/saeedygujjar/main/edit/main/
 // @run-at       document-start
 // ==/UserScript==
 

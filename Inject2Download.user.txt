@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Inject2Download
-// @namespace    http://lkubuntu.wordpress.com/
-// @version      0.4.8
-// @description  Simple media download script
+// @name         Video_Link_Grabber
+// @namespace    https://github.com/saeedygujjar/
+// @version      1.0
+// @description  Clone of inject2Downliad User Script
 // @author       Anonymous Meerkat
 // @include      *
 // @grant        GM_getValue
@@ -40,7 +40,7 @@
                 "flash": "Only if Flash is used",
                 "no": "No"
             },
-            default: "no"
+            default: "yes"
         },
         noads: {
             name: "Block ads if possible (using a proper adblocker is highly recommended)",
@@ -49,14 +49,14 @@
         // TODO: Implement
         /*download: {
             name: "Enable downloading via the player itself if possible",
-            default: false
+            default: true
         },*/
         blacklist: {
             name: "Blacklisted domains (one per line)",
             type: "textarea",
             default: [
                 "translate.google.com", // Spams audio files
-                "live.com"              // Conflicts with $f
+                "youtube.com.com"              // Conflicts with $f
             ].join("\n")
         }
     };
@@ -139,8 +139,8 @@
         !did_prefs) {
         run_on_load(function() {
             var text = [
-                "<html><head><title>Inject2Download Preferences</title></head><body style='margin:0;padding:1em'>",
-                "<div style='width:100%'><h2>Inject2Download</h2></div>",
+                "<html><head><title>Video_Link_Grabber Preferences</title></head><body style='margin:0;padding:1em'>",
+                "<div style='width:100%'><h2>Video_Link_Grabber</h2></div>",
                 "<div id='prefs'></div>",
                 "<div id='save'><button id='savebtn'>Save</button><br /><span id='savetxt'></span></div>",
                 "</body></html>"
@@ -191,8 +191,8 @@
                 } else if (template.type === "textarea") {
                     var input = document.createElement("textarea");
                     input.name = key;
-                    input.style.width = "30em";
-                    input.style.height = "10em";
+                    input.style.width = "20em";
+                    input.style.height = "5em";
                     input.innerHTML = config[key];
 
                     prefdiv.appendChild(input);
@@ -200,7 +200,7 @@
                     var input = document.createElement("input");
                     input.name = key;
                     input.value = config[key];
-                    input.style.width = "50em";
+                    input.style.width = "25em";
 
                     prefdiv.appendChild(input);
                 }
@@ -348,8 +348,8 @@
                 el = document.createElement("div");
                 el.style.all = "initial";
                 //el.style.position = "absolute";
-                el.style.width = "max(60%, 100em)";
-                el.style.height = "max(60%, 100em)";
+                el.style.width = "max(40%, 60em)";
+                el.style.height = "max(40%, 60em)";
                 el.style.maxWidth = "100%";
                 el.style.maxHeight = "100%";
                 el.style.height = "auto";
@@ -360,7 +360,7 @@
                 el.style.zIndex = Number.MAX_SAFE_INTEGER - 1;
                 el.style.color = "black";
                 el.style.fontFamily = "sans-serif";
-                el.style.fontSize = "16px";
+                el.style.fontSize = "7px";
                 el.style.lineHeight = "normal";
                 el.style.textAlign = "left";
                 el.style.overflow = "scroll";
@@ -372,14 +372,14 @@
                 eldivhold = document.createElement("div");
                 eldivhold.id = "i2d-popup-span-holder";
                 eldivhold.style.all = "initial";
-                eldivhold.style.width = "100%";
+                eldivhold.style.width = "80%";
                 eldivhold.style.display = "block";
                 eldivhold.style.overflow = "auto";
-                eldivhold.style.paddingBottom = ".5em";
+                eldivhold.style.paddingBottom = ".3em";
 
                 elspan = document.createElement("span");
                 elspan.style.all = "initial";
-                elspan.style.fontSize = "130%";
+                elspan.style.fontSize = "80%";
                 elspan.style.cursor = "pointer";
                 elspan.style.color = "#900";
                 elspan.style.padding = ".1em";
@@ -392,7 +392,7 @@
 
                 elspan1 = document.createElement("span");
                 elspan1.style.all = "initial";
-                elspan1.style.fontSize = "130%";
+                elspan1.style.fontSize = "80%";
                 elspan1.style.cursor = "pointer";
                 elspan1.style.color = "#900";
                 elspan1.style.padding = ".1em";
@@ -406,7 +406,7 @@
 
                 elspan2 = document.createElement("a");
                 elspan2.style.all = "initial";
-                elspan2.style.fontSize = "130%";
+                elspan2.style.fontSize = "80%";
                 elspan2.style.cursor = "pointer";
                 elspan2.style.color = "#900";
                 elspan2.style.padding = ".1em";
@@ -474,7 +474,7 @@
             eldiv.appendChild(el_br);
             //eldiv.innerHTML += text + "<a href='" + newurl + "' style='color:blue' title='" + newurl + "'>" + shorturl + "</a><br />";
 
-            // XXX: why is this needed? test: http://playbb.me/embed.php?w=718&h=438&vid=at/nw/flying_witch_-_01.mp4, animeplus.tv
+            // XXX: why is this needed? test: https://www.w3schools.com/html/mov_bbb.mp4, test video
             /*document.body.removeChild(el);
             el.style.position = "absolute";
             document.body.appendChild(el);*/
